@@ -1,5 +1,8 @@
 rtw89 v5
 ===========
+
+### WORKS WITH UBUNTU 20.04
+
 ### A repo for the newest Realtek rtlwifi codes.
 
 This branch has v5 of the code, which is latest from Realtek.
