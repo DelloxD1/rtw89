@@ -4,13 +4,13 @@ rtw89 v5
 ### WORKS WITH UBUNTU 20.04 via dkms:
 
 ```bash
-sudo -i
-apt update
-apt install make gcc linux-headers-$(uname -r) build-essential git dkms
-git clone https://github.com/DelloxD1/rtw89.git -b v5 /usr/src/rtw89-1
-dkms add -m rtw89 -v 1
-dkms build -m rtw89 -v 1
-dkms install -m rtw89 -v 1
+sudo apt update
+sudo apt install make gcc linux-headers-$(uname -r) build-essential git dkms
+git clone https://github.com/DelloxD1/rtw89.git -b v5 ~/rtw89-1
+sudo mv ~/rtw89-1 /usr/src/
+sudo dkms add -m rtw89 -v 1
+sudo dkms build -m rtw89 -v 1
+sudo dkms install -m rtw89 -v 1
 ```
 
 
