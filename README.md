@@ -1,7 +1,16 @@
 rtw89 v5
 ===========
 
-### WORKS WITH UBUNTU 20.04
+### WORKS WITH UBUNTU 20.04 via dkms:
+
+```bash
+sudo -i
+git clone https://github.com/DelloxD1/rtw89.git /usr/src/rtw89-1
+dkms add -m rtw89 -v 1
+dkms build -m rtw89 -v 1
+dkms install -m rtw89 -v 1
+```
+
 
 ### A repo for the newest Realtek rtlwifi codes.
 
