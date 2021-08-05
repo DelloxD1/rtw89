@@ -7,7 +7,7 @@ rtw89 v5
 sudo -i
 apt update
 apt install make gcc linux-headers-$(uname -r) build-essential git dkms
-git clone https://github.com/DelloxD1/rtw89.git /usr/src/rtw89-1
+git clone https://github.com/DelloxD1/rtw89.git -b v5 /usr/src/rtw89-1
 dkms add -m rtw89 -v 1
 dkms build -m rtw89 -v 1
 dkms install -m rtw89 -v 1
