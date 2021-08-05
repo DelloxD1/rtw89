@@ -1,5 +1,19 @@
 rtw89 v5
 ===========
+
+### WORKS WITH UBUNTU 20.04 via dkms:
+
+```bash
+sudo -i
+apt update
+apt install make gcc linux-headers-$(uname -r) build-essential git dkms
+git clone https://github.com/DelloxD1/rtw89.git -b v5 /usr/src/rtw89-1
+dkms add -m rtw89 -v 1
+dkms build -m rtw89 -v 1
+dkms install -m rtw89 -v 1
+```
+
+
 ### A repo for the newest Realtek rtlwifi codes.
 
 This branch has v5 of the code, which is latest from Realtek.
@@ -86,4 +100,3 @@ chips, and the Realtek engineers who do will not read these issues. To reach the
 linux-wireless@vger.kernel.org. Include a detailed description of any messages in the kernel
 logs and any steps that you have taken to analyze or fix the problem. If your description is
 not complete, you are unlikely to get any satisfaction.
-
